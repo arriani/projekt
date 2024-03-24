@@ -1,50 +1,54 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JR</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JR</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
 </head>
 <body>
-    
-        <nav id="desktop-nav">
-            <div class="logo"><img src="./assets/logo_jr.png" alt="logo"></div>
-            <div>
-              <ul class="nav-links">
-                <li><a href="#strona_glowna">Strona Główna</a></li>
-                <li><a href="#dotacje">Dotacje</a></li>
-                <li><a href="#oferta">Oferta</a></li>
-                <li><a href="#referencje">Referencje </a></li>
-                <li><a href="#o_firmie">O Firmie</a></li>
-                <li><a href="#aktualnosci">Aktualności</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-              </ul>
-            </div>
-          </nav>
-          <nav id="hamburger-nav">
-            <div class="logo"><img src="./assets/logo_jr.png" alt="logo"></div>
-            <div class="hamburger-menu">
-              <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <div class="menu-links">
-                <li><a href="#strona_glowna" onclick="toggleMenu()">Strona Główna</a></li>
-                <li><a href="#dotacje" onclick="toggleMenu()">Dotacje</a></li>
-                <li><a href="#oferta" onclick="toggleMenu()">Oferta</a></li>
-                <li><a href="#referencje" onclick="toggleMenu()">Referencje</a></li>
-                <li><a href="#o_firmie" onclick="toggleMenu()">O Firmie</a></li>
-                <li><a href="#aktualnosci" onclick="toggleMenu()">Aktualności</a></li>
-                <li><a href="#kontakt" onclick="toggleMenu()">Kontakt</a></li>
-              </div>
-            </div>
-          </nav>
-   
-    <div class="content">
-        <!-- Tu znajdzie się zawartość strony -->
+  <nav id="desktop-nav">
+    <div ><img src="./assets/logo_jr.png" alt="logo jr" class="logo"></div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#sekcja1">Sekcja 1</a></li>
+        <li><a href="#sekcja2">Sekcja 2</a></li>
+        <li><a href="#sekcja3">Sekcja 3</a></li>
+        <li><a href="#sekcja4">Sekcja 4</a></li>
+      </ul>
     </div>
-</body>
+  </nav>
+  <nav id="hamburger-nav">
+    <div ><img src="./assets/logo_jr.png" alt="logo jr" class="logo"></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+        <li><a href="#sekcja1" onclick="toggleMenu()">Sekcja 1</a></li>
+        <li><a href="#sekcja2" onclick="toggleMenu()">Sekcja 2</a></li>
+        <li><a href="#sekcja3" onclick="toggleMenu()">Sekcja 3</a></li>
+        <li><a href="#sekcja4" onclick="toggleMenu()">Sekcja 4</a></li>
+        </div>
+      </div>
+  </nav>
+  <div class="slideshow">
+    <div><img src="./assets/szop1.jpg" alt="SZOP1"></div>
+    <div><img src="./assets/szop2.jpg" alt="szop2"></div>
+    <div><img src="./assets/szczur1.jpg" alt="szczur1"></div>
+  </div>
 
+  <div class="slider-dots"></div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="script.js"></script>
+</body>  
 </html>
