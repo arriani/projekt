@@ -6,9 +6,7 @@
   <title>JR</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mediaqueries.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
-
+ 
 </head>
 <body>
   <nav id="desktop-nav">
@@ -38,17 +36,54 @@
         </div>
       </div>
   </nav>
-  <div class="slideshow">
-    <div><img src="./assets/szop1.jpg" alt="SZOP1"></div>
-    <div><img src="./assets/szop2.jpg" alt="szop2"></div>
-    <div><img src="./assets/szczur1.jpg" alt="szczur1"></div>
+  
+  <div class="slideshow-container">
+    <div class="mySlides ">
+      <img src="./assets/szop1.jpg" alt="szop1" class="slideshow-img">
+      <div class="slideshow-text">
+        <div class="slideshow-maintext">SZOP</div>
+        <div class="slideshow-bottomtext">Szopy są suuuper ^^</div>
+        <a href="https://pl.wikipedia.org/wiki/Szop">
+          <button type="button" class="slideshow-button">Szop info!!</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="mySlides ">
+      <img src="./assets/szop2.jpg" alt="szop2" class="slideshow-img">
+      <div class="slideshow-text">
+        <div class="slideshow-maintext">WIĘCEJ SZOPÓW</div>
+        <div class="slideshow-bottomtext">Szop (Procyon) - rodzaj ssaków z rodziny szopowatych (Procyonidae).</div>
+        <a href="https://pl.wikipedia.org/wiki/Szopowate">
+          <button type="button" class="slideshow-button">Szopowate</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="mySlides ">   
+      <img src="./assets/szczur1.jpg" alt="szczur1" class="slideshow-img">
+      <div class="slideshow-text">
+        <div class="slideshow-maintext">A TU SZCZURY AKURAT</div>
+        <div class="slideshow-bottomtext">Szczur[12], seramoszczur[12] (Rattus) – rodzaj ssaków z podrodziny myszy (Murinae) w obrębie rodziny myszowatych (Muridae), obejmujący kilkadziesiąt gatunków. Do najbardziej rozpowszechnionych należą, występujące również w Polsce, szczur śniady i szczur wędrowny, a także występujący w południowo-wschodniej Azji i na wyspach Pacyfiku szczur polinezyjski.</div>
+        <a href="https://pl.wikipedia.org/wiki/Szczur">
+          <button type="button" class="slideshow-button">Szopowate</button>
+        </a>
+      </div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+    <a class="next" onclick="plusSlides(1)">&#10095</a>
+  </div>  
+  <br>
+
+  <div style="text-align: center;">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
   </div>
 
-  <div class="slider-dots"></div>
 
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+ 
   <script src="script.js"></script>
 </body>  
 </html>
